@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BotaoExcluir from '../BotaoExcluir';
 // import Item from './Item';
 
 function Lista() {
-    let livros = [{
+    const [livros, setLivros] = useState([{
         titulo: "Use a Cabeça: Java" ,
         resumo:"Use a Cabeça! Java é um aexperiência completa de aprendizado em programação orientada a objeto (OO) e Java." , 
         editora:"Alta Books" ,
@@ -19,7 +19,7 @@ function Lista() {
         editora: "Addison Wesley",
         autores: ["Cay Horstmann"],
     
-    }]
+    }])
     return(
         <div className='container col-10 '>
             <h1 className='p-3'>Catálogo de Livros</h1>
