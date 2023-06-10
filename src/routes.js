@@ -24,7 +24,7 @@ export default function AppRouter(){
     return(
         <Router>
             <Routes>
-                <Route  path='/' element={<Catalogo livros={livros} />} />
+                <Route  path='/' element={<Catalogo livros={livros} setLivros={setLivros} />} />
                 <Route  path='/Novo' element={<Novo setLivros={setLivros}/>} />
             </Routes>
         </Router>

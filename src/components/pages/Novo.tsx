@@ -24,7 +24,6 @@ export default function Catalogo({ setLivros }: Props){
    function adicionarLista(evento: React.FormEvent<HTMLFormElement>) {
       evento.preventDefault();
       const autores = listaAutores.split('\n')
-      console.log(autores);
       
       setLivros( (livros) => 
         [
