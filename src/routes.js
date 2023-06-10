@@ -26,6 +26,7 @@ export default function AppRouter(){
             <Routes>
                 <Route  path='/' element={<Catalogo livros={livros} setLivros={setLivros} />} />
                 <Route  path='/Novo' element={<Novo setLivros={setLivros}/>} />
+                
             </Routes>
         </Router>
 
